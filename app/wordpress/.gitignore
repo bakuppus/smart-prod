@@ -1,0 +1,29 @@
+
+!wp-config.php
+
+# ignore everything in the "wp-content" directory, except:
+# "plugins" directory
+# "themes" directory
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+# ignore these plugins from the core
+wp-content/plugins/hello.php
+wp-content/plugins/akismet/
+
+.htaccess
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore all files that start with ~
+~*
+# ignore all files starting with .
+.*
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig

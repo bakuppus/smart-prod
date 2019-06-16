@@ -1,0 +1,41 @@
+FROM php:7.2-fpm
+
+#install php-gd
+RUN apt-get update && apt-get install -y \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+    && docker-php-ext-configure gd \
+        --with-freetype-dir=/usr/include/ \
+        --with-jpeg-dir=/usr/include/ \
+    && docker-php-ext-install -j$(nproc) gd
+
+	#install php-zip
+RUN apt-get update && apt-get install -y zlib1g-dev \
+    && docker-php-ext-install zip
+
+#RUN docker-php-ext-install mbstring pdo pdo_mysql mysqli soap xmlrpc zip \
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+
+
+RUN install_packages cron libbz2-1.0 libc6 libcomerr2 libcurl3 libexpat1 libffi6 libfreetype6 libgcc1 libgcrypt20 libgmp10 libgnutls-deb0-28 libgpg-error0 libgssapi-krb5-2 libhogweed2 libicu52 libidn11 libjpeg62-turbo libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.4-2 liblzma5 libmcrypt4 libncurses5 libnettle4 libp11-kit0 libpcre3 libpng12-0 libpq5 libreadline6 librtmp1 libsasl2-2 libsqlite3-0 libssh2-1 libssl1.0.0 libstdc++6 libsybdb5 libtasn1-6 libtidy-0.99-0 libtinfo5 libxml2 libxslt1.1 zlib1g
+
+# RUN apt-get update && apt-get install -y zlib1g-dev libicu-dev g++
+# RUN docker-php-ext-configure intl
+# RUN docker-php-ext-install intl && docker-php-ext-enable intl
+
+# RUN apt-get update -y \
+#   && apt-get install -y \
+#     libxml2-dev \
+#   && apt-get clean -y \
+#   && docker-php-ext-install soap \
+#   && docker-php-ext-enable soap
+
+
+# RUN docker-php-ext-install xmlrpc && docker-php-ext-enable xmlrpc
+
+# RUN docker-php-ext-configure opcache --enable-opcache \
+#     && docker-php-ext-install opcache
+# # Copy configuration
+# COPY config/opcache.ini $PHP_INI_DIR/conf.d/
+

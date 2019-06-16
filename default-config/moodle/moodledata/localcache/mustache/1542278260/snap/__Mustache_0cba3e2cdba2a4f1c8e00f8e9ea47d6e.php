@@ -1,0 +1,68 @@
+<?php
+
+class __Mustache_0cba3e2cdba2a4f1c8e00f8e9ea47d6e extends Mustache_Template
+{
+    private $lambdaHelper;
+
+    public function renderInternal(Mustache_Context $context, $indent = '')
+    {
+        $this->lambdaHelper = new Mustache_LambdaHelper($this->mustache, $context);
+        $buffer = '';
+        $blocksContext = array();
+
+        $buffer .= $indent . '<input type="checkbox" name="';
+        $value = $this->resolveValue($context->find('name'), $context);
+        $buffer .= call_user_func($this->mustache->getEscape(), $value);
+        $buffer .= '" value="';
+        $value = $this->resolveValue($context->find('value'), $context);
+        $buffer .= call_user_func($this->mustache->getEscape(), $value);
+        $buffer .= '" id="';
+        $value = $this->resolveValue($context->find('id'), $context);
+        $buffer .= call_user_func($this->mustache->getEscape(), $value);
+        $buffer .= '" ';
+        // 'checked' section
+        $value = $context->find('checked');
+        $buffer .= $this->section51d7c9c652ced0161cb587bacd669266($context, $indent, $value);
+        $buffer .= '>
+';
+        $buffer .= $indent . '<label for="';
+        $value = $this->resolveValue($context->find('id'), $context);
+        $buffer .= call_user_func($this->mustache->getEscape(), $value);
+        $buffer .= '">';
+        $value = $this->resolveValue($context->find('label'), $context);
+        $buffer .= call_user_func($this->mustache->getEscape(), $value);
+        $buffer .= '</label>
+';
+
+        return $buffer;
+    }
+
+    private function section51d7c9c652ced0161cb587bacd669266(Mustache_Context $context, $indent, $value)
+    {
+        $buffer = '';
+        $blocksContext = array();
+    
+        if (!is_string($value) && is_callable($value)) {
+            $source = 'checked';
+            $result = call_user_func($value, $source, $this->lambdaHelper);
+            if (strpos($result, '{{') === false) {
+                $buffer .= $result;
+            } else {
+                $buffer .= $this->mustache
+                    ->loadLambda((string) $result)
+                    ->renderInternal($context);
+            }
+        } elseif (!empty($value)) {
+            $values = $this->isIterable($value) ? $value : array($value);
+            foreach ($values as $value) {
+                $context->push($value);
+                
+                $buffer .= 'checked';
+                $context->pop();
+            }
+        }
+    
+        return $buffer;
+    }
+
+}

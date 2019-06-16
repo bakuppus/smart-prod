@@ -1,0 +1,45 @@
+a:61:{s:18:"coursefootertoggle";s:1:"0";s:14:"cover_carousel";s:1:"0";s:9:"customcss";s:1261:"a[title="E-Commerce"] {display: none !important;} 
+a[title="Competencies management"] {display:none !important;} 
+#moodle-footer{  }
+.coursecard { background-size : contain;}
+#mr-nav {background : url('https://oneacademyplatform.com/learn/header-img2.png');}
+#mr-nav a {color:white !important;}
+#mr-nav .popover-region-notifications>div>.icon {
+    color: white;
+}
+#snap-home{
+background-image: url('https://oneacademyplatform.com/learn/logo-white.png') !important;
+}
+#mrooms-footer{
+ display:none;
+}
+#page-footer {
+  display:none;
+}
+#moodle-footer{
+   background: #700068;
+}
+#snap-site-footer{
+   margin-top:-80px !important;
+}
+.block_iomad_company_admin .nav-tabs {
+    font-size: 17px !important;
+}
+div.iomadlink, div.iomadlinkreports {
+    width: 110px !important;
+    margin-bottom: 20px !important;
+}
+.iomadlink_container>a
+{margin : 0px !important;}
+.block_iomad_company_admin .fa-action {display:none !important;}
+#course-toc .snap-section-complete {
+    float: right;
+    margin-top: -8px;
+    margin-right: 5%;
+}
+a.snap-highlight {display:none !important;}
+.coursecard-contacts{display:none !important;}
+a[href*="/course/publish/index.php"] {display:none;}
+a[href*="/course/view.php?&edit=on"] {display:none;}";s:15:"customisenavbar";s:1:"0";s:18:"customisenavbutton";s:1:"0";s:15:"deadlinestoggle";s:1:"0";s:8:"facebook";s:0:"";s:7:"favicon";s:22:"/cropped-ico-1 (1).png";s:13:"fc_browse_all";s:1:"0";s:8:"fc_eight";s:1:"0";s:7:"fc_five";s:1:"0";s:7:"fc_four";s:1:"0";s:10:"fc_heading";s:16:"Featured courses";s:6:"fc_one";s:1:"0";s:8:"fc_seven";s:1:"0";s:6:"fc_six";s:1:"0";s:8:"fc_three";s:1:"0";s:6:"fc_two";s:1:"0";s:14:"feedbacktoggle";s:1:"0";s:8:"footnote";s:258:"<span class="col-md-4"></span>
+<span class="col-md-4"><a href="http://www.oneacademyplatform.com/" target="_blank"><br><img src="https://oneacademyplatform.com/learn/logo-white.png" width="60"></a>Powered by OneAcademy</span>
+<span class="col-md-4"></span>";s:16:"forumpoststoggle";s:1:"0";s:10:"fs_heading";s:0:"";s:12:"fs_one_image";s:0:"";s:11:"fs_one_text";s:0:"";s:12:"fs_one_title";s:0:"";s:14:"fs_three_image";s:0:"";s:13:"fs_three_text";s:0:"";s:14:"fs_three_title";s:0:"";s:12:"fs_two_image";s:0:"";s:11:"fs_two_text";s:0:"";s:12:"fs_two_title";s:0:"";s:11:"headingfont";s:8:""Roboto"";s:12:"hidenavblock";s:1:"1";s:9:"instagram";s:0:"";s:7:"leftnav";s:4:"list";s:8:"linkedin";s:0:"";s:4:"logo";s:15:"/logo-5 (1).png";s:14:"messagestoggle";s:1:"0";s:8:"navbarbg";s:7:"#ffffff";s:17:"navbarbuttoncolor";s:7:"#ffffff";s:16:"navbarbuttonlink";s:7:"#ff7f41";s:10:"navbarlink";s:7:"#ff7f41";s:23:"personalmenulogintoggle";s:1:"1";s:6:"poster";s:0:"";s:15:"resourcedisplay";s:4:"list";s:9:"seriffont";s:9:""Georgia"";s:27:"showcoursegradepersonalmenu";s:1:"0";s:15:"slide_one_image";s:0:"";s:18:"slide_one_subtitle";s:0:"";s:15:"slide_one_title";s:0:"";s:17:"slide_three_image";s:0:"";s:20:"slide_three_subtitle";s:0:"";s:17:"slide_three_title";s:0:"";s:15:"slide_two_image";s:0:"";s:18:"slide_two_subtitle";s:0:"";s:15:"slide_two_title";s:0:"";s:8:"subtitle";s:0:"";s:10:"themecolor";s:7:"#700068";s:7:"twitter";s:0:"";s:7:"version";s:10:"2017063005";s:7:"youtube";s:0:"";}
